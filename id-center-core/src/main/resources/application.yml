@@ -1,0 +1,7 @@
+app:
+  name: id-center
+  env: ${APP_ENV:dev}
+
+spring:
+  profiles:
+    active: ${app.env}
