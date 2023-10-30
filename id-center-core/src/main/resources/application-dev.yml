@@ -1,6 +1,6 @@
 # 生成ID的方式：zookeeper-custom、zookeeper-persistent、zookeeper-ephemeral、redis、uuid、mysql
 id-generator:
-  type: zookeeper-ephemeral
+  type: zookeeper-custom
 
 # curator配置
 curator:
