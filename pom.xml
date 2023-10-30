@@ -23,21 +23,13 @@
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <spring-boot.version>3.0.6</spring-boot.version>
+        <spring-boot-maven-plugin.version>3.0.8</spring-boot-maven-plugin.version>
         <general-starter.version>1.0.0-SNAPSHOT</general-starter.version>
         <curator.version>5.5.0</curator.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <dependency>
                 <groupId>fun.pullock</groupId>
                 <artifactId>general-starter-parent</artifactId>
@@ -66,7 +58,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${spring-boot.version}</version>
+                    <version>${spring-boot-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
