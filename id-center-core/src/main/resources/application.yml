@@ -5,3 +5,5 @@ app:
 spring:
   profiles:
     active: ${app.env}
+  application:
+    name: ${app.name}
