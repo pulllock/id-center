@@ -13,7 +13,7 @@ public class IdGenerationClientController implements IdGenerationClient {
     private IdGenerationService idGenerationService;
 
     @Override
-    public Result<Long> generateOne() {
+    public Result<String> generateOne() {
         return new Result<>(idGenerationService.generateOne());
     }
 }

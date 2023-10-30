@@ -13,5 +13,5 @@ public interface IdGenerationClient {
      * @return 生成的ID
      */
     @RequestMapping(path = "/rpc/id/generation/one")
-    Result<Long> generateOne();
+    Result<String> generateOne();
 }

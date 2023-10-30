@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class RedisIdGenerator implements IdGenerator {
 
     @Override
-    public Long generate() {
-        return 000000L;
+    public String generate() {
+        return "000000";
     }
 }

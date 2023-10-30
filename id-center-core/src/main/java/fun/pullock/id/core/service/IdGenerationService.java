@@ -11,7 +11,7 @@ public class IdGenerationService {
     @Resource
     private IdGeneratorFactory idGeneratorFactory;
 
-    public Long generateOne() {
+    public String generateOne() {
         return idGeneratorFactory.getIdGenerator().generate();
     }
 }

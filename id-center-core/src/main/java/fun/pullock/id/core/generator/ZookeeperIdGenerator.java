@@ -19,12 +19,12 @@ public class ZookeeperIdGenerator implements IdGenerator {
     private CuratorClient curatorClient;
 
     @Override
-    public Long generate() {
+    public String generate() {
         String path = curatorClient.createEphemeralSequentialPath(ID_PATH);
         if (path == null || path.isEmpty()) {
             LOGGER.warn("Can not generate id from zookeeper, fallback to simple id generator");
-            return -1L;
+            return "NULL";
         }
-        return Long.valueOf(path.substring(ID_PATH.length()));
+        return path.substring(ID_PATH.length());
     }
 }
