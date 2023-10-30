@@ -7,11 +7,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
-@ConditionalOnProperty(name = "id-generator.type", havingValue = "zookeeper")
+@ConditionalOnProperty(name = "id-generator.type", havingValue = "zookeeper-ephemeral")
 @Component
-public class ZookeeperIdGenerator implements IdGenerator {
+public class ZookeeperEphemeralIdGenerator implements IdGenerator {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ZookeeperIdGenerator.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ZookeeperEphemeralIdGenerator.class);
 
     private static final String ID_PATH = "/id/ID-";
 
